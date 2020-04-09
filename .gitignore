@@ -1,2 +1,5 @@
 # Dependency directories
 node_modules/
+mochawesome-report
+.nyc-output
+coverage
