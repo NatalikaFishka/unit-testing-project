@@ -1,0 +1,39 @@
+{
+  "name": "unit-test-course",
+  "version": "1.0.0",
+  "description": "unit-test-course",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ./",
+    "coverage": "nyc npm run test"
+  },
+  "keywords": [
+    "mocha",
+    "unit",
+    "test"
+  ],
+  "author": "Nataliya Okuneva",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^4.2.3",
+    "mocha": "^7.1.1",
+    "mochawesome": "^5.0.0",
+    "nyc": "^15.0.1"
+  },
+  "nyc": {
+    "reporter": "html",
+    "check-coverage": true,
+    "branches": 10,
+    "lines": 10,
+    "functions": 10
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run coverage"
+    }
+  }
+}
