@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint ./",
-    "coverage": "nyc npm run test > coverage/coverage.xml"
+    "coverage": "nyc npm run test > coverage/coverage.xml",
+    "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha --colors --reporter mocha-jenkins-reporter"
   },
   "keywords": [
     "mocha",
@@ -21,6 +22,7 @@
     "eslint-config-google": "^0.14.0",
     "husky": "^4.2.3",
     "mocha": "^7.1.1",
+    "mocha-jenkins-reporter": "^0.4.3",
     "mochawesome": "^5.0.0",
     "nyc": "^15.0.1"
   },
