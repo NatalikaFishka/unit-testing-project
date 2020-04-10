@@ -4,7 +4,7 @@
   "description": "unit-test-course",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha > test.tap",
     "lint": "eslint ./",
     "coverage": "nyc npm run test"
   },
