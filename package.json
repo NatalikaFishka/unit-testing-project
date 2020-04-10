@@ -7,7 +7,7 @@
     "test": "mocha",
     "lint": "eslint ./",
     "coverage": "nyc npm run test > coverage/coverage.xml",
-    "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha --colors --reporter mocha-jenkins-reporter"
+    "test-jenkins": "coverage/report.xml mocha --colors --reporter mocha-jenkins-reporter"
   },
   "keywords": [
     "mocha",
