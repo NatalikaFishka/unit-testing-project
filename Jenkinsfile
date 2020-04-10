@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'npm i'
+                bat 'npm i'
             }
         }
         stage('test') {
             steps {
-                sh 'npm run coverage'
+                bat 'npm run coverage'
             }
         }
     }
