@@ -6,8 +6,7 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint ./",
-    "coverage": "nyc npm run test > coverage/coverage.xml",
-    "test-jenkins": "coverage/report.xml mocha --colors --reporter mocha-jenkins-reporter"
+    "coverage": "nyc npm run test"
   },
   "keywords": [
     "mocha",
@@ -22,16 +21,19 @@
     "eslint-config-google": "^0.14.0",
     "husky": "^4.2.3",
     "mocha": "^7.1.1",
-    "mocha-jenkins-reporter": "^0.4.3",
     "mochawesome": "^5.0.0",
-    "nyc": "^15.0.1"
+    "nyc": "^15.0.1",
+    "tap-nyc": "^1.0.3"
   },
   "nyc": {
-    "reporter": "html",
+    "reporter": [
+      "html",
+      "text-summary"
+    ],
     "check-coverage": true,
-    "branches": 10,
-    "lines": 10,
-    "functions": 10
+    "branches": 80,
+    "lines": 80,
+    "functions": 80
   },
   "husky": {
     "hooks": {
