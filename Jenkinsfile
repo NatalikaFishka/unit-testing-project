@@ -29,7 +29,7 @@ pipeline {
     }
     post {
         always {
-             archiveArtifacts artifacts: 'coverage'
+             archiveArtifacts artifacts: 'coverage/'
         }
     }
 }
