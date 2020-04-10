@@ -23,9 +23,13 @@ pipeline {
                 reportFiles          : 'index.html',
                 reportName           : 'Test Report'
               ]
-              archiveArtifacts artifacts: 'coverage',
             }
         }
       }
+    }
+    post {
+        always {
+             archiveArtifacts artifacts: 'coverage'
+        }
     }
 }
