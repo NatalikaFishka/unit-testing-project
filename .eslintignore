@@ -1,2 +1,4 @@
 mochawesome-report
 node-modules
+.nyc-output
+coverage

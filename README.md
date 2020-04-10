@@ -12,3 +12,8 @@ npm run test
 ```
 npm run coverage
 ```
+
+# Run eslint
+```
+npm run lint
+```

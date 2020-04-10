@@ -38,7 +38,7 @@ class NumbersValidator {
   getEvenNumbersFromArray(arrayOfNumbers) {
     if (Array.isArray(arrayOfNumbers) &&
       arrayOfNumbers.every((item) => typeof item === 'number')) {
-      const arrayOfEvenNumbers = arrayOfNumbers.filer(this.isNumberEven);
+      const arrayOfEvenNumbers = arrayOfNumbers.filter(this.isNumberEven);
       return arrayOfEvenNumbers;
     } else {
       throw new Error(`${arrayOfNumbers} is not an array of "Numbers"`);
