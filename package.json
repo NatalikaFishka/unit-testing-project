@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint ./",
-    "coverage": "nyc npm run test > coverage/test.tap"
+    "coverage": "nyc npm run test > coverage/coverage.xml"
   },
   "keywords": [
     "mocha",
